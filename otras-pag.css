@@ -1,0 +1,72 @@
+li {           /*este es solo una prueba*/
+    margin-bottom: 0.5rem;
+	color: rgb(98, 236, 70);
+}
+/*l de abajo dicta un señañamiento de las uicaciones del css */
+*{ /*esto dimensiona de las subbarras a otras opciones service*/
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background: #72d5f3;
+}
+
+header{
+	width: 90%;
+}
+
+.navegacion{
+	width: 1200px;
+	margin: 25px auto;
+	background: #9df363;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
